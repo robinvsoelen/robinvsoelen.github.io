@@ -1,1 +1,88 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;700&display=swap" rel="stylesheet">
+    <title>Robin van Soelen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <div id="main-div" class="main-content">
+        <div >
+            <h1 id="title" class="title">Robin van Soelen</h1>
+        </div>
+    </div>
+
+
+    <div class="about-me" id="about-me-container">
+        <h1 class="header">Hi, I'm Robin!</h1>
+        <p>I'm a recent graduate of the master Interaction Technology at the University of Twente. I get excited about finding creative applications of modern technologies and I enjoy making these become a reality. I get even more excited whenever I get to combine this love for technology with my love for creating music. </p>
+        <img class="my-face" src="img/myface.jpg">
+
+        <a href="https://www.linkedin.com/in/robin-van-soelen-08332274/" ><img id="linkedinlogo" src="img/linkedin.svg"></a>
+        <a href="https://www.instagram.com/robovs.music/"><img id="instagramlogo" src="img/instagram.svg"></a>
+    </div>
+
+
+    <div id="container" class="circle-container">
+        <div id="spinner" class="outer-circle">
+            <div id="inner-circle" class="inner-circle">
+                <div class="groove"></div>
+                <p class="vinyl-text" id="vinyl-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="maincontent" class="main-content-container">
+        <div class="work-background" id="work-background">
+            <h1 class="work-header" id="work-header"></h1>
+            <p class="work-text" id="work-text"></p>
+        </div>
+        <div class="info-button" id="info-button"></div>
+        <p id="item-count"></p>
+        <div id="work-media"></div>
+    </div>
+
+
+
+    <!--<div  class="container"> 
+        <img  id="reload" alt="scroll" class="vinyl" src="vinyl 1.png" onerror="this.onerror=null; this.src='image.png'">
+    </div> -->
+
+    <div class="nav-container">
+        <div class="nav-item"><a id="home-link" href="#" onclick='return false;'>Home</a></div>
+        <div class="nav-item"><a id="work-link" href="#" onclick='return false;'>Work </a></div>
+        <div class="nav-item"><a id="about-link" href="#" onclick='return false;'>About </a></div></div>
+    </div>
+
+    <div class="home-anchor" id="home-anchor"></div>
+    <div class="work-anchor" id="work-anchor"></div>
+    <div class="about-anchor" id="about-anchor"></div>
+
+
+
+    <div id="arrows" class="arrows">
+        <a href="#" onclick='return false;' id="arrow-left" class="arrow-container"><img class="arrow-left"
+                src="img/right-arrow.svg"></a>
+        <a href="#" onclick='return false;' id="arrow-right" class="arrow-container"><img class="arrow-right"
+                src="img/right-arrow.svg"></a>
+    </div>
+
+
+    <div class="emptyspace"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

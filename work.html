@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;700&display=swap" rel="stylesheet">
+    <title>Robin van Soelen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <a class="back-to-main" href="index.html">
+        <h1> BACK</h1>
+        <svg class="back-arrow" height="512pt" viewBox="0 0 512 511" width="512pt" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="m143.871094 512.484375c-10.398438 0-20.597656-4.0625-28.28125-11.734375l-97.960938-97.753906c-11.367187-11.34375-17.628906-26.433594-17.628906-42.492188s6.261719-31.152344 17.628906-42.496094l97.960938-97.753906c11.511718-11.492187 28.664062-14.886718 43.695312-8.652344 15.011719 6.226563 24.710938 20.742188 24.710938 36.976563v91.921875c158.804687 0 288.003906-129.199219 288.003906-288.003906v-31.996094c0-11.046875 8.953125-20 20-20s20 8.953125 20 20v31.996094c0 87.613281-34.117188 169.984375-96.070312 231.9375-61.953126 61.949218-144.320313 96.070312-231.933594 96.070312-22.058594 0-40.003906-17.945312-40.003906-40v-91.925781c0-.003906 0-.007813 0-.011719-.03125-.015625-.070313-.03125-.105469-.042968-.011719.015624-.027344.027343-.042969.042968l-97.960938 97.757813c-3.792968 3.785156-5.882812 8.820312-5.882812 14.179687s2.089844 10.394532 5.882812 14.179688l97.960938 97.753906.042969.042969c.035156-.011719.074219-.023438.105469-.039063 0-.003906 0-.007812 0-.015625v-21.921875c0-11.046875 8.957031-20 20.003906-20 11.042968 0 20 8.953125 20 20v21.921875c0 16.234375-9.699219 30.75-24.710938 36.976563-4.996094 2.074218-10.230468 3.082031-15.414062 3.082031zm0 0" />
+        </svg>
+    </a>
+
+    <div class="work-item" id="thesis">
+        <h1 class="work-title">GPT powered content generation</h1>
+
+        <p>The idea of automatically generating content and sharing content is something that has intrigued me in the past years. With the recent developments in AI language models this now seemed very much possible. As an experimnet, I created a program that can automatically generate and publish blog posts. I also experimented with creating a program that can generate short form videos and post them automatically on Youtube.</p> 
+            
+        <p>To create the blog posts, I used the API from OpenAI to generate the content, including meta information like tags, a summary and an image description. I then fetch an image based on the description through the pexels API and upload the post using the  The header image is retrieved through the pexels API. Afterwards, the post is automatically uploaded to wordpress using their API. </p>
+
+        <p>For the topic of the blog, I decided to go with a music related theme. This seemed like a topic that wouldnt be harmful if it provided  I have The blog can be found <a style="text-decoration: underline;" href="www.sonicselfstarter"> here</a></p>
+    </div>
+
+    <div class="work-item" id="thesis">
+        <h1 class="work-title">Embodied music controller</h1>
+        <i>Completed in: August 2021 </i>
+
+        <p> For the graduation project of the master interaction technology at the University of Twente, I developed an embodied music controller that makes it possible for producers to perform their material using gestures and movements. This way audio clips and parameters can be triggered and adjusted in a way that feels more satisfying for the performer and more engaging for the audience.   </p> 
+            
+        <p>I created three wireless devices which transmit data from an IMU sensor to my laptop. the software is able to distinguish between different gestures using machine learning (an RNN LSTM) and is able to send out the corresponding musical information (MIDI) to a DAW</p>
+
+        <p>This system has been co-developed with music producers and dancers. The transparency and engagement of a performance given  with the controller has been evaluated with an audience. Results show that both performers and audience are excited about this technology being used</p>
+
+        <p>For more information you can access the thesis <a style="text-decoration: underline;" href="http://essay.utwente.nl/88241/1/van_Soelen_MA_EEMCS.pdf"> here</a></p>
+
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/nhJEbcDCL5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="work-text">
+        </p>
+    </div>
+
+
+
+    <div class="work-item" id="soundlab">
+        <h1 class="work-title">Waveshape</h1>
+        <i>Completed in: July 2020. Team members: Jelle Hamoen </i>
+        <p class="work-text">  
+            The challenge of this research project was to create a tool that can generate a 3D shape based on the emotional quality of a song. A website was created that connects to a Spotify API that retrieves the valence and arousal of any song. This information was used to automatically generate a torus-like shape that corresponds to these parameters. 
+        </p>
+        <img src="img/waveshape.png" width="80%">
+
+    </div>
+
+    <div class="work-item">
+        <h1 class="work-title">Internship SoundLab</h1>
+        <i>Completed in: December 2019 </i>
+
+        <p>I did an internship at the SoundLab in Enschede. This is a new workshop space in Enschede that is being designed for children to experiment and play with sound. Together with music teacher students I designed and created three prototypes which are explained below. </p>
+
+
+        <h2>Project 1: Singing game</h2>
+        <p class="work-text">
+            This game can be best described as a combination between singstar and flappy bird. The concept of the game is to use the pitch of your voice to control the height of a flying zeppelin. The goal is to avoid obstacles and collect items. Throughout the game the scenery changes and audio effects that correspond to that scenery are added to the voice (for example: delay in the mountains). I created a functional prototype in Max MSP.
+        </p>
+
+        <p>I also created a dashboard for teachers so that they easily could adapt the difficulty and vocal range to each student.</p>
+
+        <p>Afterwards, a group of computer science students adapted this design into a <a style="text-decoration: underline;" href="https://bachelorshowcase-eemcs.apps.utwente.nl/view/6mG6j1FU">web based application</a></p>
+  
+            <img src="img/Singing game.jpg" width="80%">
+
+
+        <h2>Project 2: Interactive floor</h2>
+        <p class="work-text">The second project I created during this internship made use of an interactive floor that is displayed in the DesignLab at the University of Twente. This system uses kinect sensors to measure the position of users within a  room and uses two beamers to project these locations onto the floor.
+        </p>
+
+        <p>
+            Using Unity and Fmod I created an application that uses this floor to let people get familiar with musical styles. In this application four vinyls are projected onto the floor. Each vinyl corresponds to a certain genre of music. When a user steps onto a vinyl an audio loop of that genre starts playing. Each user has the possiblity to "become" the rythm, bass, melody and harmony section, which determines the type of audio loop that starts playing.   
+        </p>
+
+        <p>
+            The application was evaluated with a group of children who were very enthousiastic about the system.
+        </p>
+
+        <img src="img/interactive floor.jpg" width="80%">
+
+
+        <h2>Project three: Music glove</h2>
+        <p class="work-text">During the third project of this internship I experimented with using IMU sensors to control musical parameters through movement. I added a light sensor to the palm of the hand to measure whether it was open or not. 
+        </p>
+        <p>
+            I immediately became a fan of how natural this interaction with the glove felt and the amount of possiblities it offered. This project lay the foundation of the embodied music controller which I developed for my master thesis.
+        </p>
+
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/AQjgk2PXow0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/mwGwotefnkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+
+    <div class="work-item" id="terratree">
+        <h1 class="work-title">TerraTree</h1>
+        <i>Completed in: July 2019. Team members: Chetana Pai, Suhaib Aslam, Zack Wilson and Rutger Frieswijk</i>
+        <p class="work-text">The municapility of Enschede requested that we design an interactive experience in a graveyard called "het boerenkerkhof". This is a very old graveyard that now functions as a park where some historically important people of Enschede are buried. However, the park is not visited that often.</p>
+
+        <p>We chose to revolve this installation around a big tree that was positioned in the centre of the graveyard. 
+            
+        The concept was that this tree has roots going through the whole park and that when you pump energy into it,
+         it can tell you a story about person who is buried there. We created three devices which are used to transfer energy into the tree and select a story. A big button was placed on the tree to release this energy and play the audio story.</p>
+
+        <img src="img/eneschtreeee.PNG" width="80%">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/-p5mxphXN1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+    <div class="work-item" id="pentasynth">
+        <h1 class="work-title">PentaSynth</h1>
+        <i>Completed in: July 2018 </i>
+        <p class="work-text">This was my graduation project for the bachelor Creative Technology at the University of
+            Twente. It was made through an assignment given by music school Kaliber based in Enschede, The Netherlands.
+            The assignment was to develop a music workshop using modern technologies. </p>
+        <p>I chose to create a workshop with the aim of making children more aware of the different type of instruments
+            in
+            modern music. This was done through creating a new
+            type of instrument, called The Pentasynth.</p>
+        <p>The setup of the PentaSynth consists of 4 devices with each 5 buttons. Each device triggers a different type
+            of musical instrument.
+            One device plays the chords, one the melody, one the bass and one the drums. The notes of the melody and the
+            bass are being changed according to the chord that is being played. This allows children to play and
+            improvise together without having to worry about music theory. </p>
+
+        <img src="img/Instruments order white background.jpg" width="100%">
+        <p>I made the system working using arduinos hooked up to capacitive sensors. These signals were being translated
+            into the right MIDI information using Java and being sent to Ableton to play the sounds.</p>
+
+
+        <p>I tested the setup at several daycares in Enschede. Results showed that despite the setup being a lot of fun,
+            that the system created benefit when learning to recognise different types of instruments. </p>
+        <img src="img/instruments.jpg" width="40%">
+    </div>
+
+
+
+    <div class="work-item" id="dropbydrop">
+        <h1 class="work-title">Drop by drop</h1>
+        <i>Completed in: July 2017</i>
+        <p class="work-text">This project has been made in a team of 15 people. The goal was to build an interactive data physicalization. This has been done through visualizing earthquakes in the dutch province Groningen over time. When doing this, the impact of gas drilling which is done in this province will become visible. </p>
+
+        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/7E4Y6wen_mE?controls=0" frameborder="0" allow="" allowfullscreen></iframe>
+        
+        <p>The physicalization is being done by letting droplets of water fall on a water bin under which the map of Groningen is projected. The droplets fall on the location of the earthquake. The ripple effect of the droplet creates a nice visualisation of an earthquake. The system is made interactive by a wheel which can be turned to go through the time. 
+         </p>
+     
+         <img src="img/concept drawing groningen earthquake.png" width="100%">
+         <img src="img/droplet.jpg" width="100%">
+     
+         <p>Together with Oliver Horst, my task during this project was to build an XY plotter which would take a coordinate and move towards there. This has been built using several stepper motors and an Arduino. 
+             </p>    
+         <img src="img/plotter.jpg" width="100%">
+    </div>
+
+    <div class="work-item">
+        <h1 class="work-title">Data visual of tornadoes in the USA</h1>
+        <i>Completed in: June 2017. Team members: Oliver Horst, Sjoerd Baarslag</i>
+        <p class="work-text">
+            This is a project made for a course on datavisualisation. It was a group project with the freedom to create
+            any data visualisation. We chose to visualise tornadoes in the USA. The result is visible <a
+                href="http://syrotech.net/tornadoes.html" style="text-decoration: underline;">here</a>
+        </p>
+
+        <img src="img/tornadoes.PNG" width="49%">
+        <img src="img/tornadoes2.PNG" width="49%">
+    </div>
+
+    <div class="work-item" id="stafel">
+        <h1 class="work-title">Stafel</h1>
+        <i>Completed in: April 2017. Team members: Oliver Horst, Sjoerd Baarslag, Thijs de Kleijn</i>
+        <p class="work-text">
+            This project has been developed through an assignment of the Roessingh Revalidation Centre based in
+            Enschede. Roessingh needed a new way to motivate patients recovering from a broken hip to do their
+            exercises.
+        </p>
+
+        <p>
+            The solution we came up with was an interactive installation located in the common room of the development
+            centre. This allowed the patients to do their exercises together, while taking a walk through the park.
+        </p>
+
+        <img src="img/pastedImage0.png" width="100%">
+
+        <p>The interaction with the system is going in turns. This is being made clear through a character who walks
+            around the park and moves a bit after each movement. LED's make clear who's turn it is.</p>
+
+        <p>This concept has been turned into a functioning prototype. Due to time constraints, only on one user and one
+            exercise is focused. The prototype is made using two arduino’s. One for controlling the motor which is used
+            to move the guy around the park, and one to sense if the exercise is being done. This sensing is being done
+            using distance sensors. </p>
+
+        <img src="img/stafel GIF3.gif" width="100%">
+        <img src="img/stafel GIF2.gif" width="100%">
+        <p>The guy is 3D printed and moving over the surface using a magnet. </p>
+
+        <img src="img/Stafel GIF1.gif" width="100%">
+    </div>
+
+
+    <div class="work-item" id="blandaband">
+        <h1 class="work-title">BlandaBand</h1>
+        <i>Completed in: January 2017. Team members: Oliver Horst and Sjoerd Baarslag</i>
+        <p>This prototype was build as part of a business module at the University of Twente. It is still one of my favorite projects I worked on.</p>
+
+        <p class="work-text">
+            The emerging of music streaming services like Spotify, Apple music and Youtube music has created the ability
+            to have instant access to almost every song imaginable. Due to this, the feeling of actually owning music
+            has been fading away. Every album is at your fingertips while none of them can actually be touched.
+        </p>
+        <p>
+            This project creates change by making music tangible again. The blandaband is a music player on which the
+            user can put music cards which link to playlist/album/song on a streaming service. What music is on the
+            cards and what they look like is up to the user, since these can be created and ordered online.
+
+        </p>
+        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/RAwu7UEiRwU?controls=0"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <img src="img/header.png" width="100%">
+
+        <p>To test this concept, a fully working prototype has been made. The prototype is working through a Raspberry
+            pi which is running “pi musicbox” to be able to stream from Spotify. The cards are being recognised using an
+            RFID reader. The cards have an implemented RFID chip.
+        </p>
+
+        <img src="img/cards.jpg" width="100%">
+        <img src="img/logo.jpg" width="100%">
+    </div>
+
+</body>
+
+</html>
