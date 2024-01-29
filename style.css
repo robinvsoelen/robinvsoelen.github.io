@@ -231,7 +231,7 @@ a.info-button:active{
     opacity: 0%;
 }
 .about-me h1{
-    top: 40%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
     position:fixed;
